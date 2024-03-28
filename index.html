@@ -1,0 +1,35 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill Splitting Application</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Bill Splitting Application</h1>
+
+    <form id="addFriendForm">
+      <label for="friendName">Friend Name:</label>
+      <input type="text" id="friendName" name="friendName" required />
+      <button type="submit">Add Friend</button>
+    </form>
+
+    <form id="addBillForm">
+      <label for="payer">Payer:</label>
+      <input type="text" id="payer" name="payer" required />
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" name="amount" required />
+      <label for="description">Description:</label>
+      <input type="text" id="description" name="description" required />
+      <button type="submit">Add Bill</button>
+    </form>
+
+    <button id="calculateSplit">Calculate Split</button>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
